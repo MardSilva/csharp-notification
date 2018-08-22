@@ -1,0 +1,10 @@
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\bin\Debug\csharp-notification.exe.config
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\bin\Debug\csharp-notification.exe
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\bin\Debug\csharp-notification.pdb
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp-notification.csprojResolveAssemblyReference.cache
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp_notification.Properties.Resources.resources
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp-notification.csproj.GenerateResource.cache
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp-notification.csproj.CoreCompileInputs.cache
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp-notification.exe
+d:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp-notification.pdb
+D:\Users\hampu\Documents\Visual Studio 2017\Projects\csharp-notification\csharp-notification\obj\Debug\csharp_notification.Notification.resources
