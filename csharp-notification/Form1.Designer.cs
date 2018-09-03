@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notification));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.animatetimer = new System.Windows.Forms.Timer(this.components);
+            this.animationtimerdown = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +92,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "https://github.com/Hampusm/csharp-notification";
             // 
+            // animatetimer
+            // 
+            this.animatetimer.Interval = 10;
+            this.animatetimer.Tick += new System.EventHandler(this.animatetimer_Tick);
+            // 
+            // animationtimerdown
+            // 
+            this.animationtimerdown.Interval = 10;
+            // 
             // Notification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +131,8 @@
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer animatetimer;
+        private System.Windows.Forms.Timer animationtimerdown;
     }
 }
 

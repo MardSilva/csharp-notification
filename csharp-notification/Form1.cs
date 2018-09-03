@@ -23,19 +23,22 @@ namespace csharp_notification
         string[] ScreenResolution = { Screen.PrimaryScreen.Bounds.Width.ToString(), Screen.PrimaryScreen.Bounds.Height.ToString() };
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             // Set location of notification
-            this.SetDesktopLocation(Convert.ToInt32(ScreenResolution[0]) - this.Width, Convert.ToInt32(ScreenResolution[1]) - this.Height);
+            this.SetDesktopLocation(Convert.ToInt32(ScreenResolution[0]) - this.Width, Convert.ToInt32(ScreenResolution[1]));
+
+            animatetimer.Start();
 
             Sound();
 
-            var GoAwayThread = new Thread(GoAway);
-            GoAwayThread.Start();
+            var StopThread = new Thread(Stop);
+            StopThread.Start();
         }
 
-        public void GoAway()
+        public void Stop()
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(4500);
+
             Application.Exit();
         }
 
@@ -44,6 +47,18 @@ namespace csharp_notification
             SoundPlayer notif = new SoundPlayer(Properties.Resources.notification);
             notif.Play();
 
+        }
+
+        public int go = 0;
+
+        private void animatetimer_Tick(object sender, EventArgs e)
+        {
+            if(go < this.Height + 1)
+            {
+                this.SetDesktopLocation(Convert.ToInt32(ScreenResolution[0]) - this.Width, Convert.ToInt32(ScreenResolution[1]) - go);
+            }
+
+            go = go + 5;
         }
     }
 }
